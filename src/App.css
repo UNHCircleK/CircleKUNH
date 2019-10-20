@@ -20,3 +20,32 @@
 .App-link {
   color: #09d3ac;
 }
+
+.HeaderButtons {
+  position: fixed;
+  width:100%;
+  display: flex;
+}
+
+.HeaderButton {
+  flex-grow: 1;
+  background-color: black;
+  border: none;
+  color: white;
+  font: Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.SplashImage {
+  width:100%;
+  z-index: -2;
+}
+
+.PageBox {
+  width:100%;
+  background-color: white;
+  color: black;
+  z-index: 1;
+  min-height: 100%;
+}

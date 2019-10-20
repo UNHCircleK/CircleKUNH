@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import Home from './Pages/Home';
+import AboutPage from './Pages/AboutPage';
+import PayingDues from './Pages/PayingDues';
+import Scrapbook from './Pages/Scrapbook';
+import ServiceCalendar from './Pages/ServiceCalendar';
+
+class App extends React.Component {
+
+  state = {
+    page: <Home/>
+  }
+
+
+  render() {
+    return (
+      <div className="App">
+        <div className="HeaderButtons">
+          <button className="HeaderButton" onClick= {e=> {this.setState({page: <Home/>})}}>Home</button>
+          <button className="HeaderButton" onClick= {e=> {this.setState({page: <AboutPage/>})}}>About Page</button>
+          <button className="HeaderButton" onClick= {e=> {this.setState({page: <PayingDues/>})}}>Paying Dues</button>
+          <button className="HeaderButton" onClick= {e=> {this.setState({page: <Scrapbook/>})}}>Scrapbook</button>
+          <button className="HeaderButton" onClick= {e=> {this.setState({page: <ServiceCalendar/>})}}>Service Calendar</button>
+        </div>
+        <header className="App-header">
+          {this.state.page}
+        </header>
+      </div>
+    );
+  }
+
 }
 
 export default App;
