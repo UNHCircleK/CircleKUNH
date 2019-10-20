@@ -63,3 +63,12 @@
   flex-grow: 1;
   min-height: 800px;
 }
+
+.ScrapbookGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 50px;
+}
+.ScrapbookImage {
+  width:100%;
+}
