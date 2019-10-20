@@ -3,7 +3,10 @@ import PageBox from './Components/Pagebox';
 
 class PayingDues extends React.Component {
     render() {
-        return <PageBox>Dues Can Be Paid at:</PageBox>
+        return <PageBox>
+            <p>Dues Can Be Paid at:</p>
+            
+        </PageBox>
     }
 }
 

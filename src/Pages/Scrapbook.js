@@ -3,7 +3,8 @@ import PageBox from './Components/Pagebox';
 
 class Scrapbook extends React.Component {
     render() {
-        return <PageBox>Scrapbook</PageBox>
+        return <PageBox>
+        <p>Scrapbook</p></PageBox>
     }
 }
 
