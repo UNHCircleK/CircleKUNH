@@ -1,9 +1,9 @@
 import React from 'react';
-
+import PageBox from './Components/Pagebox';
 
 class AboutPage extends React.Component {
     render() {
-        return <div>About Page</div>
+        return <PageBox>About Page</PageBox>
     }
 }
 

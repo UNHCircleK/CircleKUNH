@@ -1,9 +1,9 @@
 import React from 'react';
-
+import PageBox from './Components/Pagebox';
 
 class Scrapbook extends React.Component {
     render() {
-        return <div>Scrapbook</div>
+        return <PageBox>Scrapbook</PageBox>
     }
 }
 
